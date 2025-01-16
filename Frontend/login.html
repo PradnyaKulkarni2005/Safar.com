@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="page1css.css">
+
+</head>
+<body>
+    <header>
+        <div class="heading">
+        <h2 class="title">Exploring the Jewels of INDIA</h2></div>
+    
+        <button class="login">LOGIN</button> 
+    </header>
+        
+        <div class="sign">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="box">
+                <h2>LOGIN</h2>
+                <form action="/login" method="post">
+                    <div class="inp">
+                        <span class="icon"><ion-icon name="mail" class="symbol"></ion-icon>
+                            <input type="email" name="email" required>
+                            <label >Email</label><br>
+                            <blockquote><hr></blockquote>
+                        </span>
+                    </div>
+                    <div class="inp">
+                        <span class="icon"><ion-icon name="lock-closed" class="symbol"></ion-icon>
+                            <input type="password" name="password" required>
+                            <label >Password</label><br>
+                            <blockquote><hr></blockquote>
+                        </span>
+                    </div>
+                    <div class="forget">
+                        <label ><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password</a>
+                        <button type="submit" class="sub">Login</button>
+                        <div class="register">
+                            <p>Don't have an account ?<a href="/signup.html" class="reg">Register</a></p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+            
+    
+    
+     <script src="script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

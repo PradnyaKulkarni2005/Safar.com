@@ -1,0 +1,57 @@
+.box{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 16px;
+    
+    
+    
+}
+.headline{
+    
+    color: rgb(23, 1, 1);
+    font-family: cursive;
+    font-size: 45px;
+    font-weight: bold;
+    
+    text-align: center;
+}
+.image{
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 9px;
+    border: rgb(209, 203, 203);
+    border-radius: 8px;
+    margin: 5px;
+}
+.image img{
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    display: block;
+    border: 0 auto;
+    margin: auto;
+    box-shadow: 4px 7px 7px 0px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.image img:hover{
+    
+    transform: scale(1.06);
+    
+}
+ a{
+    text-decoration: none;
+    border: none;
+    
+}
+.box h3{
+    position: relative;
+    margin-top: 9px;
+    font-size: 30px;
+    color: rgb(16, 1, 34);
+    text-align: center;
+    
+}
