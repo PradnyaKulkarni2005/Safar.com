@@ -39,7 +39,7 @@ app.get('/signup', (req, res) => {
     res.sendFile(path.join(__dirname,  '../Frontend/signup.html'));
   });
 // Signup
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 app.post('/signup',(req,res)=>{
   const {email, password}=req.body;
   const hashedpassword=bcrypt.hashSync(password,10);
