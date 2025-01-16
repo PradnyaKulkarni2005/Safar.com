@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+
+body{
+    padding: 8px;
+    background-image: url(https://i.imgur.com/qfEQlBo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+}
+.title{
+    font-size: 3em;
+    color: rgb(52, 3, 3);
+
+}
+.login{
+    position: absolute;
+    left: 85%;
+    top: 5%;
+    width: 130px;
+    height: 50px;
+    border:2px solid black;
+    background-color: rgb(1, 1, 26);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.login:hover{
+    background-color:white ;
+    color:rgb(1, 1, 26) ;
+    font-weight: bold;
+}
+.sign{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 20px;
+    bottom: -100px;
+    right: -500px;
+    transform: scale(0);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease;
+
+}
+.sign.popup{
+    transform: scale(1);
+}
+.sign .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    
+
+}
+.sign .box{
+    width: 100%;
+    padding: 40px;
+
+}
+.box h2{
+    font-size: 2em;
+    color: rgb(2, 2, 39);
+    text-align: center;
+}
+.inp{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 ;
+    
+}
+hr{
+    border: 1px solid rgb(49, 49, 50) ;
+    
+}
+.inp label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.inp input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(24, 23, 23);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+    
+
+}
+.inp input:focus~label,
+.inp input:valid~label{
+    top:-5px;
+    background-color: rgb(4, 4, 39);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.inp .icon{
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+}
+.symbol{
+    float: right;
+    margin-top: 4px;
+}
+.forget{
+    
+  
+    font-size: .9em;
+    color: rgb(37, 35, 35);
+    font-weight: 500;
+    margin-top: 30px;
+    display: block;
+    justify-content: space-between;
+
+}
+.forget label input{
+    
+    accent-color: #061624;
+    margin-right: 5px;
+    
+
+}
+.forget a{
+    margin-left: 20px;
+    color: #102331;
+    text-decoration: none;
+}
+.forget a:hover{
+    text-decoration: underline;
+
+}
+.sub{
+   margin-top: 20px;
+    width: 100%;
+    height: 45px;
+    background-color: #0b1d2b;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+}
+.register{
+    font-size: 1em;
+    color: #0d2334;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.reg p a{
+    color: #091b29;
+    text-decoration: none;
+    font-weight: 600;
+}

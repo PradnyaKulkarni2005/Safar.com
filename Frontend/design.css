@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: rgb(230, 239, 244);
+}
+header{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 45px;
+letter-spacing: 0.2px;
+word-spacing: 2px;
+color: white;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+text-align: center;
+background-color: rgb(23, 1, 1);
+border-radius: 6px;
+}
+h1,p,h2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 0.2px;
+word-spacing: 2px;
+text-decoration: none;
+font-style: normal;
+margin-top: 25px;
+text-transform: none;
+text-align: center;
+}
+h1{
+    font-size: 35px;
+    color:rgb(2, 2, 31) ;
+    font-weight: bold;
+}
+h2{
+    font-size: 28px;
+    color:rgb(32, 32, 106) ;
+}
+.intro p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    color: #2f2f34;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    text-align: center;
+}
+.box{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 16px;
+    
+    
+    
+}
+.image{
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 9px;
+    border: rgb(209, 203, 203);
+    border-radius: 8px;
+    margin: 5px;
+}
+.image img{
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    display: block;
+    border: 0 auto;
+    margin: auto;
+    box-shadow: 4px 7px 7px 0px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.image img:hover{
+    
+    transform: scale(1.06);
+    
+}
+ a{
+    text-decoration: none;
+    border: none;
+    
+}
+.box h3{
+    position: relative;
+    margin-top: 9px;
+    font-size: 30px;
+    color: rgb(16, 1, 34);
+    text-align: center;
+    
+}
