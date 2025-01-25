@@ -2,7 +2,7 @@
 const express = require('express'); // Framework for building web applications
 const path = require('path'); // Module to handle file and directory paths
 const bodyParser = require('body-parser'); // Middleware to parse incoming request bodies
-const session = require('express-session'); // Middleware to manage user sessions
+const session = require('express-session'); // Middleware to m anage user sessions
 const bcrypt = require('bcryptjs'); // Library for hashing passwords securely
 const jwt = require('jsonwebtoken'); // Library for generating and verifying JSON Web Tokens (JWT)
 const mysql = require('mysql'); // MySQL module to interact with the database
