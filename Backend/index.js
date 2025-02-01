@@ -5,7 +5,7 @@ const bodyParser = require('body-parser'); // Middleware to parse incoming reque
 const session = require('express-session'); // Middleware to m anage user sessions
 const bcrypt = require('bcryptjs'); // Library for hashing passwords securely
 const jwt = require('jsonwebtoken'); // Library for generating and verifying JSON Web Tokens (JWT)
-const mysql = require('mysql'); // MySQL module to interact with the database
+const mysql = require('mysql2'); // MySQL module to interact with the database
 require('dotenv').config(); // Module to load environment variables from a .env file
 
 // Initializing the Express application
@@ -25,11 +25,12 @@ app.use(session({
 
 // MySQL database connection setup
 const db = mysql.createConnection({
-  host: process.env.DB_HOST, // Database host (e.g., localhost or a cloud database host)
-  user: process.env.DB_USER, // Database username
-  password: process.env.DB_PASSWORD, // Database password
-  database: process.env.DB_NAME, // Name of the database
-  connectTimeout: 10000 // Sets the connection timeout to 10 seconds
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT || 3306,
+  ssl: { rejectUnauthorized: true }  // Ensures a secure SSL connection
 });
 
 // Function to handle database connection retries
